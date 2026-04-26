@@ -22,7 +22,6 @@ def lap_data():
 
     def extract(lap, name):
         tel = lap.get_telemetry()
-        # Normalize coordinates to 0-1 range
         x = tel['X'].values.tolist()
         y = tel['Y'].values.tolist()
         speed = tel['Speed'].values.tolist()
